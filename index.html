@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FizzBuzz</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <header id="title">
+      <h1>Fizz<span id="buzz">Buzz<span></h1>
+    </header>
+    
+    <main>
+      
+      <section id="play-btn-container" class="">
+        <button id="play-btn" class="js-play-btn">Play</button>
+      </section>
+      
+      <section id="directions" class="hidden">
+        <h2>How To Play:</h2>
+        <p>&emsp;First, you will be prompted to enter a number that you will play to. Starting from 1 through the number you choose. For each number, you must determine if that number is a multiple of 3, a multiple of 5, or a multiple of 15. <br><br>&emsp;If it is a multiple of 3, you will enter <b>'fizz'</b>. For multiples of 5, enter <b>'buzz'</b>. For multiples of 3 & 5 enter <b>'fizzbuzz'</b>. And if the number is not a multiple of any of those, enter the <b>number</b>. The goal is to correctly guess your way through each and every number and make it to the end.</p>
+        <button id="got-it-btn">Got It</button>
+      </section>
+      
+      <section id="count-to-container" class="hidden">
+        <form id="count-to-form">
+          <label for="count-to">Enter Number To Play To</label>
+          <input id="count-to" type="text" name="count" required autofocus> 
+        </form>
+      </section>
+      
+      <section id="game-content" class="hidden">
+        <form id="game-content-form">
+          <fieldset>
+            <legend>
+              Goal: <span id="goal"></span> - Remaining: <span id="remaining"></span>
+            </legend>
+            
+            <div id="inner-container">
+              <h1 id="current-num">1</h1>
+            </div>
+            
+            <input id="user-answer" type="text" placeholder="fizz / buzz / fizzbuzz / number" required> <!-- Enter fizz / buzz / fizzbuzz /  none --> 
+            <h2 class="try-again js-try-again hidden">Try Again</h2>
+          </fieldset>
+        </form>
+      </section>
+      
+      <section id="results" class="hidden">
+        <h2>Results</h2>
+        <div class="js-results"></div>
+      </section>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #dddfd4;
+  color: #173e43;
+}
+
+#buzz {
+  color: #3fb0ac;
+}
+
+#play-btn {
+  background: #3fb0ac;
+}
+
+#title {
+  color: #173e43;
+  text-align: center;
+  font-size: 60px;
+}
+
+#play-btn-container {
+  margin-top: 240px;
+  text-align: center;
+}
+
+#play-btn {
+  font-size: 40px;
+  border-radius: 3px;
+  width: 300px;
+  height: 100px;
+}
+
+#got-it-btn {
+  background: #3fb0ac;
+}
+
+#count-to {
+  background: #fae596;
+}
+
+#directions {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+#got-it-btn {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  height: 3em;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#count-to-container {
+  text-align: center;
+}
+
+label[for=count-to] {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#count-to {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#game-content-form {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#game-content fieldset {
+  padding: 75px;
+  width: 100%;
+}
+
+#inner-container {
+  background: teal;
+  text-align: center;
+  font-size: 60px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#current-num {
+  margin: 0;
+}
+  
+
+#user-answer {
+  background: #fae596;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  width: 75%;
+  margin: 100px auto 0;
+}
+
+.try-again {
+  position: absolute;
+  color: #b61317;
+  left: 0;
+  bottom: 50%;
+  display: block;
+  width: 200px;
+  margin: 50px auto 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+#results {
+  text-align: center;
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.fizz-buzz-item {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid grey;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.fizz-buzz-item span {
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.fizz, .fizzbuzz {
+  border: 4px solid green;
+}
+
+.buzz, .fizzbuzz {
+  background-color: #D5F5E3;
+}
+
+.hidden {
+  display: none;
+}
+
+
