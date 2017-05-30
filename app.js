@@ -13,16 +13,27 @@ function giveDirections() {
 }
 
 function askForCount() {
+  state.countToVal = 0;
+  state.currentNum = 1;
+  $('#count-to-form')[0].reset();
   $('#directions').addClass('hidden');
   $('#count-to-container').removeClass('hidden');
+  $('#count-to').focus();
 }
 
 function startGame() {
   $('#count-to-container').addClass('hidden');
   $('#game-content').removeClass('hidden');
-  $('#title h1').css({'font-size': "22px"});
+
+  // Resets stats and last game's results
   $('#goal').text(state.countToVal);
+  $('#current-num').text(state.currentNum);
   $('#remaining').text(state.countToVal - state.currentNum + 1);
+  $('#game-content-form')[0].reset();
+  $('.js-results').empty();
+  $('.js-replay-btn').addClass('hidden');
+
+  $('#title h1').css({'font-size': "22px"});
   $('#user-answer').attr('size', $('#user-answer').attr('placeholder').length);
   $('#user-answer').focus();
 }
@@ -46,6 +57,7 @@ function display(content) {
 
 function finish() {
   $('#game-content').addClass('hidden');
+  $('.js-replay-btn').removeClass('hidden');
 }
 
 //================================================================================
@@ -124,6 +136,15 @@ function getUserAnswer() {
   });
 }
 
+function playAgainClick() {
+  $('.js-replay-btn').click(function(e) {
+    e.preventDefault();
+    $('#results').addClass('hidden');
+
+    askForCount();
+  });
+}
+
 
 
 //================================================================================
@@ -134,6 +155,7 @@ $(function() {
   directionsClick();
   getCountToNumber();
   getUserAnswer();
+  playAgainClick();
   
   // startGame(); // remove for user input
 });

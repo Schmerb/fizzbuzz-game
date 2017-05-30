@@ -22,7 +22,7 @@ body {
 }
 
 #play-btn-container {
-  margin-top: 240px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -147,6 +147,19 @@ label[for=count-to] {
 
 .buzz, .fizzbuzz {
   background-color: #D5F5E3;
+}
+
+
+
+.replay-btn {
+  clear: both;
+  display: block;
+  background: #fae596;
+  width: 10em;
+  height: 3em;
+  font-size: 24px;
+  border-radius: 5px;
+  margin: 100px auto;
 }
 
 .hidden {

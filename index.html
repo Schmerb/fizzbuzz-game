@@ -27,7 +27,7 @@
       <section id="count-to-container" class="hidden">
         <form id="count-to-form">
           <label for="count-to">Enter Number To Play To</label>
-          <input id="count-to" type="text" name="count" required autofocus> 
+          <input id="count-to" type="text" name="count" required> 
         </form>
       </section>
       
@@ -42,7 +42,7 @@
               <h1 id="current-num">1</h1>
             </div>
             
-            <input id="user-answer" type="text" placeholder="fizz / buzz / fizzbuzz / number" required> <!-- Enter fizz / buzz / fizzbuzz /  none --> 
+            <input id="user-answer" type="text" placeholder="fizz / buzz / fizzbuzz / number" required /> 
             <h2 class="try-again js-try-again hidden">Try Again</h2>
           </fieldset>
         </form>
@@ -51,7 +51,9 @@
       <section id="results" class="hidden">
         <h2>Results</h2>
         <div class="js-results"></div>
+        <button class="replay-btn js-replay-btn hidden">Play Again</button>
       </section>
+
     </main>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
